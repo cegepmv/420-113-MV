@@ -1,0 +1,11 @@
+theme = 'hugo-theme-relearn'
+baseURL = 'https://cegepmv.github.io/420-113-MV'
+languageCode = 'fr-fr'
+title = "Système d'exploitation"
+
+[params]
+    linkTitle = "Système d'exploitation"
+    collapsibleMenu = true
+    disableLandingPageButton = true
+    themeVariant = ['auto', 'zen-light', 'zen-dark']
+    disableInlineCopyToClipBoard = true
