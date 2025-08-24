@@ -6,7 +6,7 @@ weight = "100"
 
 ## La carte-mère
 
-La *carte-mère* d'un ordinateur est un circuit imprimé qui permet la communication entre les différents périphériques de l'ordinateur. 
+La **carte-mère** d'un ordinateur est un circuit imprimé qui permet la communication entre les différents périphériques de l'ordinateur. 
 
 Dépendamment des besoins, les périphériques peuvent être directement soudés, branchés à un des ports ou fixés. 
 
@@ -112,7 +112,15 @@ La norme USB a beaucoup évolé depuis sa création: en conséquence il existe p
 
 Les nouveaux ordinateurs tendent à livrer également un ou plusieurs connecteur USB-c. Ce type est réversible. Il peut être connecté dans le sens inverse contrairement aux ports USB traditionnels.
 
-<!-- #### Ports PS/2
+### RJ45
+
+![rj45](/420-113-MV/images/rj45.png)
+
+Le **connecteur RJ45** est une prise utilisée pour connecter un ordinateur à un **réseau filaire**, comme Internet ou un réseau local. Il permet le transfert de données via un **câble Ethernet**.
+
+{{% notice style="info" title="Moins important à savoir" %}}
+
+#### Ports PS/2
 ![ps2](./images/ps2.jpg)
 Cette norme remonte au milieu des années 1980: elle était utilisée pour connecter les claviers et les souris avant l'invention de USB.
 
@@ -122,7 +130,9 @@ Utilisée pour connecter les moniteurs avant l'apparition des connecteurs DVI.
 
 #### Port série
 ![serial](./images/serial.jpg)
-Le port série (ici la spécification DE-9) est très ancien: il a initialement été conçu dans les années 1950! On le retrouve sur certaines cartes-mère car, malgré qu'il n'est pratiquement plus utilisé dans des périphériques grand public, il est très simple à utiliser et en conséquence peut être très utile pour des périphériques faits sur mesure, des prototypes, etc. On le retrouve aussi dans certaines composantes de réseaux informatiques comme des routeurs ou des commutateurs. -->
+Le port série (ici la spécification DE-9) est très ancien: il a initialement été conçu dans les années 1950! On le retrouve sur certaines cartes-mère car, malgré qu'il n'est pratiquement plus utilisé dans des périphériques grand public, il est très simple à utiliser et en conséquence peut être très utile pour des périphériques faits sur mesure, des prototypes, etc. On le retrouve aussi dans certaines composantes de réseaux informatiques comme des routeurs ou des commutateurs.
+
+{{% /notice %}}
 
 ### Autres composantes
 
