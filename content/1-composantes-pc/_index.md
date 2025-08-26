@@ -1,7 +1,7 @@
 +++
 pre = '<b>1. </b>'
 title = "Composantes d'un PC"
-weight = "100"
+weight = 1
 +++
 
 ## La carte-mère
