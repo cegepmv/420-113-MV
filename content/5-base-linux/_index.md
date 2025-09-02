@@ -1,8 +1,8 @@
 +++
-pre = '<b>4. </b>'
+pre = '<b>5. </b>'
 title = 'Base de Linux'
 date = 2025-08-26T13:18:39-04:00
-weight = 4
+weight = 5
 +++
 
 # Introduction à linux
