@@ -3,10 +3,7 @@ title = "Atelier Désassemblage"
 draft = false
 weight = "110"
 +++
-
-<!-- [Version PDF](./démontage.pdf)
-
-[Version PPTX](./démontage.pptx) -->
+-----------------
 
 ![Titre](/420-113-MV/images/cours1-1.png)
 {{% notice style="warning" title="Instruction" %}}

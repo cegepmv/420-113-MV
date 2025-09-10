@@ -1,8 +1,7 @@
 +++
 pre = '<b>4. </b>'
 title = 'Virtualisation'
-date = 2025-08-26T13:09:30-04:00
-weight = 4
+weight = "400"
 +++
 
 
@@ -40,13 +39,13 @@ Lors de la création de la VM, il est possible de définir plusieurs options, co
 
 Ce qu'on modifie ici sont les composantes matérielles virtualisées de la VM. Pour certaines composantes (par exemple les disques, les interfaces réseau, etc.) il est possible d'en ajouter ou d'en supprimer (boutons `Add` et `Remove`).
 
-### **Mémoire** ou mémoire vive
+### Mémoire ou mémoire vive
 Il est possible de spécifier très précisément la quantité de mémoire allouée à la VM. Attention cependant: si vous n'en allouez pas assez, la VM risque de mal fonctionner, et si vous en allouez trop c'est votre PC qui pourrait être affecté... La limite inférieure est généralement donnée dans les spécifications techniques du SE : par exemple, Debian recommande 2Go; Windows 11, 4Go; etc. Pour la limite supérieure, il est préférable de ne pas dépasser la quantité de RAM réelle de l'hôte.
 
-### **Processeur**
+### Processeur
 On peut changer la configuration du processeur virtuel, plus précisément: le nombre de CPU virtuels et le nombre de coeurs par CPU.
 
-### **Disques**
+### Disques
 Dans cette section on peut effectuer des opérations sur les disques virtuels. Ceux-ci correspondent en réalité à un fichier sur l'hôte ayant le même nom que la VM. Quatre tâches sont possibles:
 + **Monter**: Connecter le disque sur le système hôte. Ceci est une manière d'accéder aux fichiers de la VM à partir de votre PC (mais il y en a d'autres plus simples).
 + **Défragmenter**: La défragmentation est une opération qui permet d'améliorer les performances d'un disque. Attention, seuls les disques utilisés par les systèmes Windows bénéficient de la défragmentation.
@@ -54,13 +53,13 @@ Dans cette section on peut effectuer des opérations sur les disques virtuels. C
 ### **CD/DVD**
 Ici on peut associer un fichier ISO au lecteur virtuel de la VM.
 
-### **Adaptateur réseau**
+### Adaptateur réseau
 Permet de choisir le type de connexion au réseau de la VM (plus de détails dans la section *Connexion au réseau*).
 
-### **Carte son, Imprimante, Contrôleur USB**
+### Carte son, Imprimante, Contrôleur USB
 Donne à la VM l'accès à ces périphériques sur l'hôte physique.
 
-### **Affichage**
+### Affichage
 Permet de définir la résolution de l'écran sur la VM et d'activer l'accélération graphique.
 
 ## Connexion au réseau

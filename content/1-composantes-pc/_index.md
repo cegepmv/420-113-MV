@@ -1,14 +1,14 @@
 +++
 pre = '<b>1. </b>'
 title = "Composantes d'un PC"
-weight = 1
+weight = "100"
 +++
-
+--------------
 ## La carte-mère
 
 La **carte-mère** d'un ordinateur est un circuit imprimé qui permet la communication entre les différents périphériques de l'ordinateur. 
 
-Dépendamment des besoins, les périphériques peuvent être directement soudés, branchés à un des ports ou fixés. 
+Dépendamment des besoins, les périphériques peuvent être directement soudés, fixés ou branchés à un des ports. 
 
 ### Facteur de forme
 Les PCs, serveurs et autres équipements peuvent avoir différentes tailles. Les dimensions d'une carte-mère sont déterminées par la taille et les proportions du boîtier. Ces tailles sont standardisées; en voici quelques unes parmi les plus courantes :
@@ -54,12 +54,13 @@ Ensemble de composantes électroniques interreliées permettant de contrôler l'
 Traditionnellement, le *chipset* est divisé en 2 parties : *Northbridge* et *Southbridge*:
 + **Northbridge :** Circuits permettant la communication entre le CPU, la RAM, la carte graphique ou tout autre périphérique qui nécessite des performances élevées. 
 + **Southbridge :** Gère les communications entre Northbridge et les périphériques de performance moindre (USB, disques et réseau notamment).
-Depuis quelques années cependant, la plupart des fonctions de Northbridge sont incluses dans le CPU lui-même
+
+Depuis quelques années cependant, la plupart des fonctions de *Northbridge* sont incluses dans le CPU lui-même.
 
 #### Socket et CPU
-Le CPU (*Central Processing Unit*) est le processeur principal du PC: il est chargé d'exécuter les instructions qui sont lancées par chacun des programmes qui roulent sur le PC. Sur la carte-mère, le *socket* est le boîtier qui permet de maintenir le CPU en place. Il relie chacun des points de contacts du CPU avec les points correspondants sur la carte-mère. Chaque *socket* est donc conçu spécifiquement pour certains types de CPU; la compatibilité entre les deux est essentielle.
+Le CPU (*Central Processing Unit*) est le processeur principal du PC : il est chargé d'exécuter les instructions qui sont lancées par chacun des programmes qui roulent sur le PC. Sur la carte-mère, le *socket* est le boîtier qui permet de maintenir le CPU en place. Il relie chacun des points de contacts du CPU avec les points correspondants sur la carte-mère. Chaque *socket* est donc conçu spécifiquement pour certains types de CPU; la compatibilité entre les deux est essentielle.
 
-Attention, tous les processeurs d'une même génération ne sont pas nécessairement compatibles à un même *socket*: c'est plutôt la fréquence (en MHz) qui est déterminante. Quelques exemples:
+Attention, tous les processeurs d'une même génération ne sont pas nécessairement compatibles à un même *socket*: c'est plutôt la fréquence (en MHz) qui est déterminante. Quelques exemples :
 
 | Socket | Modèle de CPU | Plage de fréquences |
 | ------ | ------------- | ------------------- |

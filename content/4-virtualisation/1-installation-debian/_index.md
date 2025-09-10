@@ -1,12 +1,11 @@
 +++
-title = 'Instalation Debian'
+title = 'Installation Debian (VM)'
 date = 2025-08-26T13:53:19-04:00
-weight = 1
+weight = "410"
 +++
 
 ---
 
-## 1.Virtuel Création d'une VM *Debian* dans *VMWare Workstation*
 Dans ce qui suit nous allons voir les étapes de création d'une VM linux *Debian*.
 
 ### Créer une VM "vide"
@@ -73,14 +72,14 @@ Dans la fenêtre qui suit, il s'agit de spécifier si l'hôte fait partie d'un d
 
 Dans les dialogues qui suivent, vous devez spécifier les identifiants et mots de passe de votre utilisateur et de *root*.
 
-#### ***root***
+#### root
 Sur tout système linux, l'utilisateur ayant tous les privilèges se nomme *root*. On le nomme aussi parfois "administrateur" ou "superutilisateur". Les actions qui requièrent des privilèges élevés (comme installer des programmes, changer des paramètres système, etc.) doivent être accomplies par *root*, et afin d'éviter que n'importe qui utilise ce compte, on lui donne un mot de passe.
 
 Spécifiez le mot de passe pour *root*:
 
 ![rootpsw](/420-113-MV/images/rootpsw.png)
 
-#### **Utilisateur**
+#### Utilisateur
 Il est fortement déconseillé que *root* soit le seul utilisateur d'un système: on recommande qu'il existe au moins un utilisateur non-privilégié pour les utilisations normales du système (ce qui évite de commettre des erreur irréparables). 
 
 Dans les trois dialogues suivants, vous devez donc donner un nom au nouvel utilisateur pui spécifier son identifiant et son mot de passe:
@@ -96,7 +95,7 @@ Dans la fenêtre suivante il s'agit de déterminer le fuseau horaire où vous vo
 
 ![fuseau](/420-113-MV/images/fuseau.png)
 
-#### **Partitionnement des disques**
+#### Partitionnement des disques
 Au moment de l'installation d'un SE, il est possible de subdiviser le disque en plusieurs __partitions__, ce qui peut avoir plusieurs avantages: faciliter les sauvegardes ("backups"), organiser efficacement les stockage, créer de la redondance à des fins de sécurité, installer un deuxième SE en multi-amorçage, etc. Ici, puisque nous allons simplement installer *Debian* sur tout le disque, choisissez `Assisté - utiliser un disque entier`:
 
 ![part](/420-113-MV/images/part.png)
@@ -139,7 +138,7 @@ L'installeur prendra ensuite quelques instants pour mettre à jour les informati
 
 Enfin, on peut choisir quelques options d'installation. 
 
-#### **Environnenent de bureau**
+#### Environnenent de bureau
 Les systèmes d'exploitation *MacOS* et *Windows* sont facilement identifiables par leurs caractéristiques graphiques: icônes, boutons des fenêtres, barres de tâches, fonds d'écran... ces aspects, très importants pour les utilisateurs, ne sont toutefois que la surface visible du système d'exploitation. Il constituent ce qu'on nomme *l'environnement de bureau* et servent à faciliter l'accès aux fonctionnalités du SE par les utilisateurs. 
 
 Dans l'univers linux, il existe de très nombreux environnements de bureaux différents; certains sont très recherchés au niveau visuel, d'autres moins; certains sont très efficaces, mais un peu plus difficiles à apprendre; etc. Dans le dialogue suivant, on peut choisir l'environnement de bureau parmi une liste. Choisissez `Gnome` (vous pourrez en ajouter d'autres après l'installation si cela vous intéresse de les découvrir). Aussi, laissez cochée l'option `utilitaires usuels du système`:

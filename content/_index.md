@@ -7,9 +7,9 @@ type = "home"
 
 ## Plans de cours
 
-:clipboard: Maxime Fournier  : <a href="/420-113-MV/plan420113.pdf" target="_blank">Plan de cours</a>
+:clipboard: Maxime Fournier  : <a href="/420-113-MV/files/plan420113.pdf" target="_blank">Plan de cours</a>
 
-:book: Ghazi Ben Achour  : <a href="/420-113-MV/420-113-A25-PlanDeCours-GhaziBA.pdf" target="_blank">Plan de cours</a>
+:book: Ghazi Ben Achour  : <a href="/420-113-MV/files/420-113-A25-PlanDeCours-GhaziBA.pdf" target="_blank">Plan de cours</a>
 
 
 <!-- :clipboard: Ghazi Ben Achour  : [Plan de cours(TODO)]()
@@ -19,14 +19,12 @@ type = "home"
 ***
 
 ## Horaire et disponibilités des enseignants
-:man_teacher: Maxime Fournier  : <a href="/420-113-MV/horaireAut2025.pdf" target="_blank">Lien vers mon horaire et mes disponibilités</a>
+:man_teacher: Maxime Fournier  : <a href="/420-113-MV/files/horaireAut2025.pdf" target="_blank">Lien vers mon horaire et mes disponibilités</a>
 
-:teacher: Ghazi Ben Achour  : <a href="/420-113-MV/horaireA25-GBA.pdf" target="_blank">Lien vers mon horaire et mes disponibilités</a>
+:teacher: Ghazi Ben Achour  : <a href="/420-113-MV/files/horaireA25-GBA.pdf" target="_blank">Lien vers mon horaire et mes disponibilités</a>
 
 
-<!-- :man_teacher: Ghazi Ben Achour  : [Lien vers mon horaire et mes disponibilités(TODO)]()
-
-:man_teacher: Azeddine Ait-Ouarab  : [Lien vers mon horaire et mes disponibilités(TODO)]() -->
+<!-- :man_teacher: Azeddine Ait-Ouarab  : [Lien vers mon horaire et mes disponibilités(TODO)]() -->
 
 ***
 
