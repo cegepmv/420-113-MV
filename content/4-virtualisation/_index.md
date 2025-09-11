@@ -50,7 +50,8 @@ Dans cette section on peut effectuer des opérations sur les disques virtuels. C
 + **Monter**: Connecter le disque sur le système hôte. Ceci est une manière d'accéder aux fichiers de la VM à partir de votre PC (mais il y en a d'autres plus simples).
 + **Défragmenter**: La défragmentation est une opération qui permet d'améliorer les performances d'un disque. Attention, seuls les disques utilisés par les systèmes Windows bénéficient de la défragmentation.
 + **Étendre**: Permet d'augmenter l'espace du disque virtuel. Ceci change uniquement la taille du fichier sur l'hôte: la VM n'utilisera pas automatiquement l'espace nouvellement disponible. Pour que ce soit le cas il faudra utiliser un éditeur de partition à l'intérieur de la VM.
-### **CD/DVD**
+
+### CD/DVD
 Ici on peut associer un fichier ISO au lecteur virtuel de la VM.
 
 ### Adaptateur réseau
@@ -62,7 +63,7 @@ Donne à la VM l'accès à ces périphériques sur l'hôte physique.
 ### Affichage
 Permet de définir la résolution de l'écran sur la VM et d'activer l'accélération graphique.
 
-## Connexion au réseau
+### Connexion au réseau
 Il y a 3 manières de connecter un réseau à une VM. Chacun a ses avantages et ses inconvénients et découle de ce qu'on veut faire avec la VM.
 + **Host-only**: Un réseau virtuel, isolé du réseau sur lequel l'hôte est connecté, est créé par *VMWare*. La VM se connectera sur ce réseau virtuel: elle n'a donc pas accès à l'extérieur, mais s'il existe d'autre VM sur ce même réseau "Host-only", elles pourront communiquer ensemble.
 + **NAT**: Un réseau virtuel est créé mais cette fois-ci *VMWare* joue le rôle de passerelle sur ce réseau, ce qui permet aux VM d'accéder à l'extérieur (réseau local de l'hôte et plus).
