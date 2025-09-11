@@ -113,22 +113,21 @@ Pour importer une VM dans *Workstation*, il s'agit de double-cliquer sur le fich
 
 Pour y accéder, allez au menu `File -> Power -> Power On to Firmware`
 
-# Exercices
+## Exercices
 
 1. Créer un instantané(snapshot) et nommer le vieuxBackground
 2. Changer le fond d'écran(background) 
 3. Revenir au snapshot vieuxBackground et confirmer que le fond d'écran est revenu au précédant.
 
 
+{{% notice style="tip" title="Installer *VMWare Workstation* sur vos PCs" %}}
+1. Connectez-vous au [portail Broadcom](https://support.broadcom.com).
+2. Une fois connecté, accédez aux téléchargements VMware Workstation Pro à l'aide du lien : [Download VMware Workstation Pro](https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware%20Workstation%20Pro) ».
+3. Pour les versions gratuites de VMware Workstation Pro, utilisez ce lien : [Télécharger VMware Workstation Pro (gratuit)](https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware%20Workstation%20Pro&freeDownloads=true).
+4. Développez « VMware Workstation Pro <version> for Windows ».
+5. Sélectionnez la version que vous souhaitez télécharger dans la colonne « Release ».
 
-
-
-
-
-
-
-
-
-
-
-
+Pour plus d'informations sur l'installation et la mise à niveau, consultez :
++ [Installation de Workstation Pro](https://knowledge.broadcom.com/external/article?articleNumber=387947)
++ [Mise à niveau de Workstation Pro](https://knowledge.broadcom.com/external/article?articleNumber=343514)
+{{% /notice %}}
