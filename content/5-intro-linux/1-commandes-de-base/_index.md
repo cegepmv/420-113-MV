@@ -135,3 +135,5 @@ mount, umount, du, df
 Démo avec insérer/supprimer CD
 Démo avec répertoire réseau
 --->
+
+[Exercices](https://github.com/cegepmv/420-113-MV/tree/main/exercices/Intro/)
