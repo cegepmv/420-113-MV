@@ -1,5 +1,5 @@
 +++
-title = 'Multi-amorçage (VM)'
+title = 'Multi-amorçage UEFI(VM)'
 weight = "430"
 +++
 

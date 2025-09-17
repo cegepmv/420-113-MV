@@ -563,3 +563,5 @@ Il est préférable, du point de vue de la sécurité, d'utiliser `sudo` plustô
 + Le risque d'erreur est moins grand car on ne peut lancer qu'une commande à la fois
 + Le fait d'utiliser `sudo` a pour effet que les utilisateurs sont conscients d'utiliser une commande privilégiée et possiblement "dangereuse" 
 
+[Exercices](https://github.com/cegepmv/420-113-MV/tree/main/exercices/UtilisateursPermissions/)
+

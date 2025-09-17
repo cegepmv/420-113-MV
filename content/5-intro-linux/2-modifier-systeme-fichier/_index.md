@@ -122,3 +122,5 @@ leon@debian:~$ cp dir1/* .
 leon@debian:~$ mv f* dir2/
 leon@debian:~$ cp f4 dir?
 ```
+
+[Faire les exercices 3 et 4](https://github.com/cegepmv/420-113-MV/tree/main/exercices/Intro/)

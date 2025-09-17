@@ -58,3 +58,5 @@ Les principales :
 {{% notice style="tip" title="À voir" %}}
 [Généalogie des distributions linux](https://en.wikipedia.org/wiki/Linux_distribution#/media/File:Linux_Distribution_Timeline.svg)
 {{% /notice %}}
+
+[Faire l'exercice 1](https://github.com/cegepmv/420-113-MV/tree/main/exercices/Intro/)
