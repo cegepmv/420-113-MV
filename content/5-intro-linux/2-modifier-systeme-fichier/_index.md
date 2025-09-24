@@ -87,7 +87,7 @@ Déplace un ou plusieurs fichiers. Le premier argument est la **source** et le d
 La commande `mv` fonctionne comme `cp`, à quelques exceptions près: 
 + `mv` supprime l'original après que la copie ait été faite. Pour cette raison, on utilise souvent la commande `mv` pour renommer un fichier: il s'agit de le déplacer dans le même répertoire que la source en lui donnant un autre nom.
 + L'option `-r` n'est pas utilisée
-  q
+
 *Exemples*:
 ```bash
 leon@debian:~$ mv abc /tmp/abc
