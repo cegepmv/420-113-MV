@@ -330,4 +330,4 @@ Pour afficher le nom (1er élément) de l'utilisateur suivi de son ID (3e élém
 info@debian:~$ cut -d':' -f1,3 /etc/passwd
 ```
 
-[Faire les exercices 1,2,3](https://github.com/cegepmv/420-113-MV/tree/main/exercices/utilitaireslignecommande/)
+[Faire les exercices 1,2,3](https://github.com/cegepmv/420-113-MV/tree/main/exercices/UtilitairesLigneCommande/)
