@@ -2,6 +2,7 @@
 pre = '<b>7. </b>'
 title = 'Utilisateurs et permissions'
 date = 2025-08-26T13:32:50-04:00
+draft = true
 weight = "700"
 +++
 
