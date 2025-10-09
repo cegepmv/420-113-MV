@@ -44,18 +44,18 @@ Cette commande est assez complexe mais surtout très versatile: elle permet de c
 
 Dans un exemple simple, la commande suivante recherche dans le répertoire `/usr/share` et tous ses sous-répertoires les fichiers dont le nom commence par "app":
 ```bash
-info@debian:~$ find /usr/share -name app*
+info@debian:~$ find /usr/share -name "app*"
 ```
 Les options de la commande permettent de spécifier le critère de recherche. Le tableau suivant décrit les plus courants:
 | Option | Critère | Exemple |
 | ------ | ------- | ------- |
-| -name | Le nom du fichier contient les caractères spécifiés | <nobr>`find /usr/share -name app*`</nobr> |
-| -iname | Le nom du fichier contient les caractères spécifiés, sans tenir compte de la casse | <nobr>`find /usr/share -iname app*`</nobr> |
+| -name | Le nom du fichier contient les caractères spécifiés | <nobr>`find /usr/share -name "app*"`</nobr> |
+| -iname | Le nom du fichier contient les caractères spécifiés, sans tenir compte de la casse | <nobr>`find /usr/share -iname "app*"`</nobr> |
 | -perm | Le fichier a les permissions spécifiées (mode octal) | <nobr>`find /home/info -perm 644`</nobr> |
 | -size | Recherche les fichiers correspondant à une taille donnée. "+" et "-" permettent de rechercher des fichiers dont la taille est supérieure ou inférieure à celle donnée. On peut utiliser `k`, `M` ou `G`. | <nobr>`find /home/info -size +1k`</nobr> |
 | -user | Recherche des fichiers appartenant à l'utilisateur spécifié | <nobr>`find /home/info -user bob`</nobr> |
 | -group | Recherche des fichiers appartenant au groupe spécifié | <nobr>`find /home/info -group webmin`</nobr> |
-| -maxdepth | Limite la profondeur de la recherche dans les sous-répertoires | <nobr>`find /home/info`</nobr> |
+| -maxdepth | Limite la profondeur de la recherche dans les sous-répertoires | <nobr>`find / -name etc -maxdepth 1`</nobr> |
 
 
 ## Formater et filtrer les informations
