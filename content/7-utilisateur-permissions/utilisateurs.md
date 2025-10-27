@@ -147,3 +147,5 @@ root@debian:~$ whoami
 root@debian:~$ id
 root@debian:~$ id bob
 ```
+
+[Faire les exercices](https://github.com/cegepmv/420-113-MV/tree/main/exercices/UtilisateursPermissions/)

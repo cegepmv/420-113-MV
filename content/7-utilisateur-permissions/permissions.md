@@ -139,3 +139,5 @@ Il est préférable, du point de vue de la sécurité, d'utiliser `sudo` plustô
 + C'est `root` qui décide qui peut exécuter la commande `sudo`, donc il y a un meilleur contrôle
 + Le risque d'erreur est moins grand car on ne peut lancer qu'une commande à la fois
 + Le fait d'utiliser `sudo` a pour effet que les utilisateurs sont conscients d'utiliser une commande privilégiée et possiblement "dangereuse"
+
+[Faire les exercices](https://github.com/cegepmv/420-113-MV/tree/main/exercices/UtilisateursPermissions/)
