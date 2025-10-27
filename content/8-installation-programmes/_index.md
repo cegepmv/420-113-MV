@@ -1,6 +1,7 @@
 +++
 pre = '<b>8. </b>'
 title = "Installation de programmes"
+draft=true
 weight = "800"
 +++
 ---------------------
