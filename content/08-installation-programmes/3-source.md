@@ -27,17 +27,17 @@ info@debian:~$ tar xvjf nmap-7.93.tgz
 ```
 
 {{% notice style="tip" title="Astuce"%}}
-+ Pour télécharger un fichier à partir du terminal, vous pouvez utiliser la commande `curl` :
++ Pour télécharger un fichier à partir du terminal, vous pouvez utiliser la commande `wget` :
 ```bash
-info@debian:~$ curl -o <chemin et nom du fichier> <lien de téléchargement>
+info@debian:~$ wget <lien de téléchargement>
 ```
 Exemple avec le lien de `nmap` : 
 ```bash
-info@debian:~$ curl -o ~/nmap-7.93.tar.bz2 https://nmap.org/dist/nmap-7.93.tar.bz2
+info@debian:~$ wget https://nmap.org/dist/nmap-7.93.tar.bz2
 ```
 + Le format de l'archive de nmap est `tar.bz2`. Si vous voulez extraire une archive `.tar.gz` (ou `tgz`), les options à donner à la commande `tar` sont `xzf`.
 {{%/notice%}}
-Cette commande créer le répertoire nmap-7.93/ qui contient les sources du programme. Allez dans ce répertoire.
+Cette commande créer le répertoire `nmap-7.93/` qui contient les sources du programme. Allez dans ce répertoire.
 
 ### 2. Configurer la compilation du programme
 Dans le répertoire vous verrez plusieurs fichiers source (`.cc` et `.h`) et d'autres programmes. Un de ceux-ci est un programme exécutable nommé `configure`. Lancez-le avec la commande suivante:
