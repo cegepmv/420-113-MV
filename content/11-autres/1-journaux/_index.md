@@ -1,7 +1,7 @@
 +++
 title = 'Journaux'
 date = 2025-11-13T09:56:29-05:00
-weight = 2
+weight = 1
 +++
 # Journaux système
 Tous les systèmes d’exploitation sont dotés de services qui regroupent les informations sur ce qui se passe dans le système à des fins de diagnostic ou d’alerte. Ces informations portent sur les composantes matérielles du système et leurs pilotes, le système d’exploitation ou les autres programmes ou services installés par les utilisateurs. 

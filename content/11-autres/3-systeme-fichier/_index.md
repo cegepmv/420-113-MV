@@ -1,7 +1,7 @@
 +++
-title = 'Systeme Fichier'
+title = 'Système de Fichier'
 date = 2025-11-13T09:57:25-05:00
-weight = 1
+weight = 3
 +++
 # Système de fichiers
 Dans les systèmes unix et linux, la structure des répertoires et des fichiers est toujours la même: la racine est désignée par `/` et les répertoires sont organisés en hiérarchie, comme un arbre inversé.

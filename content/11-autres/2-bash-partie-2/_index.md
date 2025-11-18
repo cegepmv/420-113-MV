@@ -1,7 +1,7 @@
 +++
 title = 'Bash Partie 2'
 date = 2025-11-13T09:58:40-05:00
-weight = 3
+weight = 2
 +++
 ## Conditions 
 Les structures conditionnelles doivent avoir la syntaxe suivante:
