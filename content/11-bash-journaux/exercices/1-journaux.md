@@ -1,8 +1,8 @@
 +++
-pre = '<b>3. </b>'
+pre = '<b>1. </b>'
 title = 'Journaux'
 date = 2025-11-18T13:44:59-05:00
-weight=3
+weight=1101
 +++
 
 **Exercices :**
