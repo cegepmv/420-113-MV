@@ -1,5 +1,5 @@
 +++
-pre = '<b>1. </b>'
+pre = '<b>2. </b>'
 title = 'Lecture de fichier'
 date = 2025-11-20T08:47:33-05:00
 weight=1102
