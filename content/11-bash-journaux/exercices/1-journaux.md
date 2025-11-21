@@ -6,7 +6,7 @@ weight=1101
 +++
 
 **Exercices :**
-
+sudo apt install nginx
 1. Quelle commande vous permet de voir les messages d’erreur émis par nginx ?
 
 2. Quelle commande vous permet de voir les 5 messages les plus récents ?
