@@ -4,7 +4,7 @@ title = 'Lecture de fichier'
 date = 2025-11-20T08:47:33-05:00
 weight=1102
 +++
-BASH
+## 1
 Dans votre containeur, créer un fichier « /root/listeEtudiants.txt » qui contient les informations sur l’évaluation des élèves d’un groupe fictif. Le format est le suivant :
 Numéro d’identification, Nom de famille, Prénom, Note
 
@@ -52,3 +52,16 @@ Affiche la moyenne du groupe. Vous ne pouvez pas la « hard coder ».
 ```
 La moyenne est de XX%
 ```
+
+## 2
+Créer un script qui lit le fichier suivant et qui crée les fichiers avec le contenu indiqué sur la même ligne.
+
+Format : contenu;chemin
+```
+Hello world;hello.txt
+#!/bin/bash\necho "Script exécuté";/root/script.sh
+Ceci est une note importante.;/root/ecole/note.txt
+Ligne 1 d’un fichier\nLigne 2 d’un fichier\nLigne 3 d’un fichier;/root/multilignes.txt
+```
+Pour que les \n soient bien compris, vous devez utiliser echo -e
+
