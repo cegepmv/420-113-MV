@@ -54,6 +54,7 @@ La moyenne est de XX%
 ```
 
 ## 2
+
 Créer un script qui lit le fichier suivant et qui crée les fichiers avec le contenu indiqué sur la même ligne.
 
 Format : contenu;chemin
@@ -65,3 +66,16 @@ Ligne 1 d’un fichier\nLigne 2 d’un fichier\nLigne 3 d’un fichier;/root/mul
 ```
 Pour que les \n soient bien compris, vous devez utiliser echo -e
 
+## 3
+
+Créer le programme `additionner.sh` qui prend 2 arguments. Les additionnes et affiche le résultat.
+
+```bash
+bash additionner.sh 4 55
+```
+
+donne
+
+```
+59
+```
