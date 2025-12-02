@@ -8,6 +8,14 @@ weight=1102
 Dans votre containeur, créer un fichier « /root/listeEtudiants.txt » qui contient les informations sur l’évaluation des élèves d’un groupe fictif. Le format est le suivant :
 Numéro d’identification, Nom de famille, Prénom, Note
 
+Indice : Voici la structure de base pour accélérer la lecture de ligne dans ce fichier.
+
+```bash
+while IFS=',' read -r DA NOM PRENOM NOTE || [ -n "$DA" ]; do
+
+done < fichier.txt
+```
+
 ```txt
 482913,dupont,marie,73
 915374,lefebvre,pierre,61
