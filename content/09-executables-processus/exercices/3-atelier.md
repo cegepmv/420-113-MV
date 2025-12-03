@@ -5,17 +5,6 @@ weight = "943"
 +++
 ---------------------
 
-
-<!-- 
-À rajouter au chapitre Réseau !!!
-## Installation su service *OpenSSH* et connexion à distance avec *putty*
-+ Avec `apt`, installez le paquet `openssh-server`
-+ Trouvez l’adresse IP de votre VM Debian avec la commande `ip address`. Elle est composée de 4 nombres entre 0 et 255. 
-+ Sur Windows, lancez le programme putty
-+ Dans la case « Host Name (or IP address) », entrez l’adresse de votre VM Debian
-+ Faites « Accept » dans la boîte de dialogue qui apparaît lors de la première connexion.
-+ Ouvrez une session normalement avec l’utilisateur info -->
-
 ## Différentes valeurs de PATH
 1. Quelles commandes parmi les suivantes doivent être appelées avec sudo?
     + `cat`

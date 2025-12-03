@@ -31,10 +31,14 @@ int main() {
     return 0;
 }
 ```
-La commande suivante compile le programme; le fichier binaire exécutable qui est créé par la compilation se nomme `a.out`:
+La commande suivante compile le programme; par défaut, le fichier binaire exécutable qui est créé par la compilation se nomme `a.out`:
 
 ```bash
 info@debian:~$ gcc hello.c 
+```
+
+Pour spécifier un nom à l'exécutable généré, il est possible d'utiliser l'option `-o`. L'exemple ci-dessous va générer un exécutable nommé `custom.out` : 
+```bash
 info@debian:~$ gcc hello.c -o custom.out
 ```
 
