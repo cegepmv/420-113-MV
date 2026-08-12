@@ -11,6 +11,8 @@ type = "home"
 
 :book: Ghazi Ben Achour  : <a href="/420-113-MV/files/plans-de-cours-horaires/420113-plan-ghazi.pdf" target="_blank">Plan de cours</a>
 
+:book: Dominic Légaré : <a href="/420-113-MV/files/plans-de-cours-horaires/420113-plan-ghazi.pdf" target="_blank">Plan de cours</a>
+
 
 <!-- :clipboard: Ghazi Ben Achour  : [Plan de cours(TODO)]()
 
@@ -23,6 +25,7 @@ type = "home"
 
 :teacher: Ghazi Ben Achour  : <a href="/420-113-MV/files/plans-de-cours-horaires/horaires-a25-ghazi.pdf" target="_blank">Lien vers mon horaire et mes disponibilités</a>
 
+:teacher: Dominic Légaré  : <a href="/420-113-MV/files/plans-de-cours-horaires/horaires-a25-ghazi.pdf" target="_blank">Lien vers mon horaire et mes disponibilités</a>
 
 <!-- :man_teacher: Azeddine Ait-Ouarab  : [Lien vers mon horaire et mes disponibilités(TODO)]() -->
 
