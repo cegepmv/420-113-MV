@@ -18,7 +18,7 @@ Les PCs, serveurs et autres équipements peuvent avoir différentes tailles. Les
 | Nom | Dimensions (mm) | Usage |
 | --- | --------------- | ----- |
 | ATX | 305 x 244  | Ordinateurs personnels génériques; le format le plus répandu  |
-| BTX | 325 x 267  | Ordinateurs personnels génériques; devait succéder à ATX mais n'a pas eu le succès souhaité  |
+| BTX | 325 x 267  | Ordinateurs personnels génériques; devait succéder à ATX mais n'a pas eu le succès souhaité (format abandonné depuis la fin des années 2000, mentionné ici à titre historique)  |
 | CEB | 305 x 267  | Serveurs  |
 | EEB | 305 x 330  | Serveurs  |
 | Micro ATX | 244 x 244  | Ordinateurs de bureau  |
@@ -60,14 +60,16 @@ Depuis quelques années cependant, la plupart des fonctions de *Northbridge* son
 #### Socket et CPU
 Le CPU (*Central Processing Unit*) est le processeur principal du PC : il est chargé d'exécuter les instructions qui sont lancées par chacun des programmes qui roulent sur le PC. Sur la carte-mère, le *socket* est le boîtier qui permet de maintenir le CPU en place. Il relie chacun des points de contacts du CPU avec les points correspondants sur la carte-mère. Chaque *socket* est donc conçu spécifiquement pour certains types de CPU; la compatibilité entre les deux est essentielle.
 
-Attention, tous les processeurs d'une même génération ne sont pas nécessairement compatibles à un même *socket*: c'est plutôt la fréquence (en MHz) qui est déterminante. Quelques exemples :
+Attention, tous les processeurs d'une même génération ne sont pas nécessairement compatibles à un même *socket*: c'est la disposition physique des points de contact et le *chipset* supporté par la carte-mère qui déterminent la compatibilité (et non la fréquence du CPU, en MHz ou GHz, qui n'a aucune incidence sur cette compatibilité). Quelques exemples de sockets courants et plus anciens :
 
-| Socket | Modèle de CPU | Plage de fréquences |
+| Socket | Modèle de CPU | Génération / Année |
 | ------ | ------------- | ------------------- |
-| 1700 | Intel Socket Support pour <br>la 14ième, 13ième et 12ième génération; Intel Core Pentium Gold; Celeron Processeur | Max 3,4 GHz |
-| 1366 | Intel Core i7; Intel Core i7 Extreme Edition; Intel Xeon | 2400 - 3200 MHz |
-| 1156 | Intel Celeron Dual-Core; Intel Core i3; Intel Core i5; Intel Core i7; Intel Pentium Dual-Core; Intel Xeon | 1867 - 3600 MHz |
-| AM4 | AMD A6, A8, A10 et A12<br>AMD Ryzen (tous) | 2800 - 4000 MHz |
+| LGA1851 | Intel Core Ultra 200S (*Arrow Lake*) | Depuis 2024 |
+| AM5 | AMD Ryzen 7000, 8000 et 9000 | Depuis 2022 |
+| LGA1700 | Intel Core 12ième, 13ième et 14ième génération; Pentium Gold; Celeron | 2021 - 2024 |
+| AM4 | AMD Ryzen (séries 1000 à 5000); AMD A6, A8, A10 et A12 | 2016 - 2022 (encore très répandu) |
+| LGA1156 | Intel Celeron Dual-Core; Intel Core i3/i5/i7 (1ière génération); Intel Pentium Dual-Core; Intel Xeon | 2009 - 2011 (obsolète) |
+| LGA1366 | Intel Core i7; Intel Core i7 Extreme Edition; Intel Xeon | 2008 - 2011 (obsolète) |
 
 
 Plus d'informations: https://www.cpu-world.com/Sockets/index.html
@@ -77,7 +79,7 @@ La RAM (*Random Access Memory*) permet de stocker les instructions des programme
 
 La plupart des PC actuels utilisent des modules de mémoire *DIMM* (*Dual Inline Memory Module*) dont la taille (comptée en "pins", qui est le nombre de points de contacts électroniques qu'elle contient) peut varier de 100 à 288 pins selon le type. Il existe aussi des modules SO-DIMM (260 pins) ou encore Micro-DIMM (172 pins, DDR2 seulement), qui sont plus petits que des modules DIMM habituels et sont utilisés dans des ordinateurs portables principalement.
 
-La technologie utilisée pour transférer les données entre la carte-mère et le module de mémoire définit le type de la RAM. Aujourd'hui, le type le plus répandu est DDR4. Le plus performant et (bientôt) le plus répandu est DDR5.
+La technologie utilisée pour transférer les données entre la carte-mère et le module de mémoire définit le type de la RAM. Aujourd'hui, le type le plus répandu et le plus performant est **DDR5** : il est le seul type supporté sur les plateformes AMD AM5, et de plus en plus de cartes-mères Intel récentes (12ième génération et plus) l'utilisent également (bien que certaines de ces cartes supportent encore le DDR4 selon le modèle). Le DDR4 demeure très présent sur un grand nombre de PC plus anciens encore en utilisation, mais il est en voie d'être remplacé.
 
 Le dernier paramètre de la mémoire RAM est sa **fréquence**, qui se mesure en *MHz*. Ce nombre désigne le nombre d'opérations de lecture ou d'écriture à la seconde que la mémoire peut supporter (2600 MHz = 2,6 milliards d'opérations/seconde); mais attention, la limite de la carte-mère est déterminante: si celle-ci est limitée à 2133 MHz, un module de RAM de 2600 MHz sera limité à 2133 MHz.
 

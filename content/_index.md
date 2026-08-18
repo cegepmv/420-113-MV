@@ -7,11 +7,7 @@ type = "home"
 
 ## Plans de cours
 
-:clipboard: Maxime Fournier  : <a href="/420-113-MV/files/plans-de-cours-horaires/420113-plan-maxime.pdf" target="_blank">Plan de cours</a>
-
-:book: Ghazi Ben Achour  : <a href="/420-113-MV/files/plans-de-cours-horaires/420113-plan-ghazi.pdf" target="_blank">Plan de cours</a>
-
-:book: Dominic Légaré : <a href="/420-113-MV/files/plans-de-cours-horaires/420113-plan-ghazi.pdf" target="_blank">Plan de cours</a>
+:book: Dominic Légaré : <a href="/420-113-MV/files/plans-de-cours-horaires/420113-plan-dominic.pdf" target="_blank">Plan de cours</a>
 
 
 <!-- :clipboard: Ghazi Ben Achour  : [Plan de cours(TODO)]()
@@ -21,11 +17,8 @@ type = "home"
 ***
 
 ## Horaire et disponibilités des enseignants
-:man_teacher: Maxime Fournier  : <a href="/420-113-MV/files/plans-de-cours-horaires/horaires-a25-maxime.pdf" target="_blank">Lien vers mon horaire et mes disponibilités</a>
 
-:teacher: Ghazi Ben Achour  : <a href="/420-113-MV/files/plans-de-cours-horaires/horaires-a25-ghazi.pdf" target="_blank">Lien vers mon horaire et mes disponibilités</a>
-
-:teacher: Dominic Légaré  : <a href="/420-113-MV/files/plans-de-cours-horaires/horaires-a25-ghazi.pdf" target="_blank">Lien vers mon horaire et mes disponibilités</a>
+:teacher: Dominic Légaré  : <a href="/420-113-MV/files/plans-de-cours-horaires/420113-plan-dominic.pdf" target="_blank">Lien vers mon horaire et mes disponibilités</a>
 
 <!-- :man_teacher: Azeddine Ait-Ouarab  : [Lien vers mon horaire et mes disponibilités(TODO)]() -->
 
