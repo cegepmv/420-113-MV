@@ -9,18 +9,11 @@ type = "home"
 
 :book: Dominic Légaré : <a href="/420-113-MV/files/plans-de-cours-horaires/420113-plan-dominic.pdf" target="_blank">Plan de cours</a>
 
-
-<!-- :clipboard: Ghazi Ben Achour  : [Plan de cours(TODO)]()
-
-:clipboard: Azeddine Ait-Ouarab  : [Plan de cours(TODO)]() -->
-
 ***
 
 ## Horaire et disponibilités des enseignants
 
 :teacher: Dominic Légaré  : <a href="/420-113-MV/files/plans-de-cours-horaires/horaire-a26-dl.pdf" target="_blank">Lien vers mon horaire et mes disponibilités</a>
-
-<!-- :man_teacher: Azeddine Ait-Ouarab  : [Lien vers mon horaire et mes disponibilités(TODO)]() -->
 
 ***
 
