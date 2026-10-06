@@ -9,6 +9,9 @@ enableEmoji = true
     collapsibleMenu = true
     themeVariant = ['auto', 'zen-light', 'zen-dark', 'neon', 'learn']
     disableInlineCopyToClipBoard = true
+    search.disable = true
+    search.index.disable = true
+    search.page.disable = true
 
 [markup]
   [markup.goldmark]
