@@ -7,14 +7,21 @@ weight = "640"
 Deux commandes sont utiles pour chercher des fichiers ou encore des informations à l'intérieur de fichiers : `grep` et `find`.
 
 ### `grep`
-À la base, `grep` recherche une *expression régulière* (ou plus simplement une chaîne de caractères) dans un fichier et retourne toutes les lignes de ce fichier qui contiennent cette chaîne. Dans l'exemple suivant, on cherche la chaîne des caractères "src" dans le fichier `/etc/apt/sources.list`:
+À la base, `grep` recherche une *expression régulière* (ou plus simplement une chaîne de caractères) dans un fichier et retourne toutes les lignes de ce fichier qui contiennent cette chaîne. Dans l'exemple suivant, on cherche la chaîne des caractères "src" dans le fichier `/etc/apt/sources.list` d'une installation qui utilise le format traditionnel :
 ```bash
 info@debian:~$ grep "src" /etc/apt/sources.list
 deb-src http://debian.mirror.iweb.ca/debian/ bullseye main
 deb-src http://security.debian.org/debian-security bullseye-security main
 deb-src http://debian.mirror.iweb.ca/debian/ bullseye-updates main
 ```
-Il est possible de lancer la recherche sur tous les fichiers d'un répertoire donné. Dans ce cas **grep** affichera devant chaque ligne le fichier d'où elle provient:
+
+Sur Debian 13, les dépôts sont généralement configurés dans `/etc/apt/sources.list.d/debian.sources`, au format deb822. Pour afficher les lignes indiquant les types de paquets, on peut utiliser :
+
+```bash
+info@debian:~$ grep "Types:" /etc/apt/sources.list.d/debian.sources
+```
+
+Il est possible de lancer la recherche sur tous les fichiers d'un répertoire donné. Dans ce cas **grep** affichera devant chaque ligne le fichier d'où elle provient. Voici un exemple avec le format traditionnel :
 
 ```bash
 info@debian:~$ grep "src" /etc/apt/*
@@ -28,6 +35,9 @@ grep: /etc/apt/preferences.d: est un dossier
 grep: /etc/apt/sources.list.d: est un dossier
 grep: /etc/apt/trusted.gpg.d: est un dossier
 ```
+
+Cette commande ne parcourt pas les sous-répertoires. Pour rechercher dans les fichiers de `/etc/apt/sources.list.d/`, on peut utiliser l'option récursive : `grep -r "Types:" /etc/apt/sources.list.d/`.
+
 Les options de **grep** sont très nombreuses. Le tableau suivant décrit les plus communes:
 | Option | Utilité | Exemple |
 | ------ | ------- | ------- |

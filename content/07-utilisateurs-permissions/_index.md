@@ -10,3 +10,14 @@ weight = "700"
 ```bash
 info@debian:~$ sudo su -
 ```
+
+# Accès SSH à un serveur distant
+
+SSH (Secure Shell) est un protocole permettant de se connecter de façon sécurisée à un serveur distant via une connexion chiffrée. Il est couramment utilisé pour l'administration de systèmes Linux, le transfert de fichiers et l'exécution de commandes à distance.
+
+## Connexion à un serveur
+
+La commande suivante permet d'établir une connexion SSH :
+
+```bash
+ssh utilisateur@adresse_ip

@@ -30,7 +30,7 @@ Pour plus de détails, faites `man apt`.
 ### /etc/apt/sources.list
 Les serveurs qui contiennent les dépôts logiciels sont synchronisés: ils ont tous le même contenu et sont régulièrement mis à jour afin qu'ils soient tous des copies identiques les uns des autres. Afin d'avoir une bonne performance lors du téléchargement et de l'installation, il est recommandé de choisir un dépôt assez proche géographiquement d'où on se trouve.
 
-Au moment de l'installation de Debian, il nous est demandé de choisir le dépôt qu'on souhaite utiliser. Si cependant on désire le changer, il faut modifier le fichier `/etc/apt/sources.list`.
+Au moment de l'installation de Debian, il nous est demandé de choisir le dépôt qu'on souhaite utiliser. Sur une installation qui utilise le format traditionnel, ce choix peut être modifié dans le fichier `/etc/apt/sources.list`. Ce fichier peut aussi être conservé après une mise à niveau vers Debian 13.
 
 Dans ce fichier chaque ligne définit l'url vers un des dépôts utilisés par `apt`. Le format est le suivant:
 
@@ -38,4 +38,36 @@ Dans ce fichier chaque ligne définit l'url vers un des dépôts utilisés par `
 
 Il est possible de spécifier plusieurs catégories sur la même ligne, par exemple `deb http://deb.debian.org/debian bullseye main contrib non-free`.
 
-Lorsqu'on fait des modifications à ce fichier, il faut mettre à jour les informations locales sur les logiciels avec la commande `apt update`.
+### Debian 13 : /etc/apt/sources.list.d/debian.sources
+
+Sur une installation récente de Debian 13 (Trixie), les dépôts officiels sont généralement configurés dans le fichier `/etc/apt/sources.list.d/debian.sources`. Ce fichier utilise le format **deb822** : chaque source est décrite par plusieurs champs et les sources sont séparées par une ligne vide.
+
+Voici un exemple; le contenu exact peut varier selon l'installation :
+
+```text
+Types: deb deb-src
+URIs: http://deb.debian.org/debian
+Suites: trixie trixie-updates
+Components: main non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Types: deb deb-src
+URIs: http://security.debian.org/debian-security
+Suites: trixie-security
+Components: main non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+```
+
+Les champs indiquent :
+
+- `Types` : les types de paquets, soit `deb` pour les paquets binaires et `deb-src` pour les paquets source.
+- `URIs` : l'adresse du dépôt.
+- `Suites` : la version de Debian et les suites de mises à jour utilisées.
+- `Components` : les catégories de paquets activées, comme `main`, `contrib`, `non-free` et `non-free-firmware`.
+- `Signed-By` : le fichier de clés utilisé pour vérifier la signature du dépôt.
+
+Pour activer une catégorie supplémentaire, on l'ajoute au champ `Components` des sources concernées. Par exemple, `Components: main contrib non-free-firmware` permet aussi d'accéder aux paquets `contrib`.
+
+Une installation peut également utiliser d'autres fichiers de sources `.sources` ou `.list` dans `/etc/apt/sources.list.d/`. Le format traditionnel reste pris en charge par Debian 13.
+
+La modification de ces fichiers nécessite les droits d'administration. Après une modification, il faut mettre à jour les informations locales sur les logiciels avec `sudo apt update`.

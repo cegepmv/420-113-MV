@@ -17,10 +17,10 @@ weight = '841'
 
 6. En une seule commande, installez les programmes suivants `3dchess`, `dreamchess` et `gnome-chess`
 
-7. Essayez d’installer le paquet `cytadela`. Quelle erreur rencontrez-vous?
+7. Essayez d’installer le paquet `cytadela`. L’installation réussit-elle ou une erreur apparaît-elle?
 
-8. Selon le fichier `/etc/apt/sources.list`, les logiciels disponibles appartiennent-ils à la catégorie `main`, `contrib` ou `non-free`?
+8. Consultez la configuration des dépôts Debian : généralement `/etc/apt/sources.list.d/debian.sources` sur Debian 13 ou `/etc/apt/sources.list` pour le format traditionnel. Quelles catégories (`main`, `contrib`, `non-free`, `non-free-firmware`) sont activées?
 
-9. Le programme `cytadela` fait partie des paquets de la catégorie `contrib`. Modifiez le fichier `/etc/apt/sources.list` pour avoir accès aux paquets de cette catégorie dans les dépôts.
+9. Le programme `cytadela` fait partie des paquets de la catégorie `contrib`. Si nécessaire, modifiez la configuration des dépôts pour activer cette catégorie. Dans le format deb822, ajoutez `contrib` aux champs `Components` des sources concernées. Actualisez ensuite la liste des paquets avec `sudo apt update`.
 
 10. Installez le programme `cytadela`.

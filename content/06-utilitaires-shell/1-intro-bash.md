@@ -103,3 +103,19 @@ info@debian:~$ read nom prenom < nomComplet.txt
 info@debian:~$ echo $prenom $nom
 Maxime Fournier
 ```
+
+# La commande `echo` sous Linux
+
+La commande `echo` permet d'afficher du texte ou la valeur de variables dans le terminal. Elle est souvent utilisée dans les scripts Bash pour afficher des messages, du débogage ou générer du contenu dans des fichiers.
+
+## Syntaxe
+
+```bash
+echo "Bonjour le monde"
+```
+
+**Résultat :**
+
+```text
+Bonjour le monde
+```
