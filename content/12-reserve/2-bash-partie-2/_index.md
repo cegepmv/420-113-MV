@@ -136,6 +136,16 @@ Dans cet exemple la commande `wc -m` permet de compter le nombre de caractères 
 
 
 
+Dans l'exemple ci-bas, on veut lire un fichier dans le paramètre $1 qui est le nom du fichier, la liste des écuries avec les espaces (option -r). Les écuries seraient en fait le premier élément -f1 dans le fichier en question séparé par des virgules. Le but serait de créer un nom de dossier avec des espaces.
+
+```sh
+cut -d',' -f1 "$1" | sort -u | while read -r ecurie
+do
+    mkdir -p "$ecurie"
+done
+```
+
+
 ### `for`
 On utilise *for* lorsque ce qui contrôle l'itération est un compteur ou des éléments d'une liste. La syntaxe est la suivante:
 ```
