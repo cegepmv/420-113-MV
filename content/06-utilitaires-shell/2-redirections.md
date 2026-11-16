@@ -90,6 +90,20 @@ info@debian:~$ echo $VAR
 12345
 ```
 
+On peut ajouter au **read** l'option -r pour garder les noms séparés par des espaces dans le cas où on veut conserver plusieurs mot. En gros, l'option -r signifie « Lis exactement ce que tu reçois. Ne traite pas les backslashes de façon spéciale. »
+
+
+Pour le chemin.txt contenant: C:\Temp
+```bash
+info@debian:~$ read chemin < chemin.txt
+info@debian:~$ read $chemin
+C:Temp
+info@debian:~$ read -r chemin < chemin.txt
+info@debian:~$ read $chemin
+C:\Temp
+```
+
+
 ### `<()` : Substitution de processus
 Lorsqu'un processus n'accepte en entrée que des fichiers, mais que non ne voulons pas créer de fichier inutilement, nous pouvons utiliser la substitution de processus.
 
