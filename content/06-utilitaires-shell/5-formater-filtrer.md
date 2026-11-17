@@ -30,6 +30,7 @@ Les options principales sont les suivantes:
 | -r | Inverser l'ordre du tri |
 | -f | Ignorer la casse |
 | -n | Tri numérique |
+| -u | Tri avec les valeurs uniques |
 
 ### `uniq`
 Éliminer les lignes en double dans un fichier. Les options principales sont les suivantes:
