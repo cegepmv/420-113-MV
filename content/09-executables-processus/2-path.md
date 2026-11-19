@@ -68,6 +68,31 @@ Le premier fichier trouvé sera exécuté, et l'ordre de recherche correspond à
 La variable `$PATH` sert donc uniquement à éviter de donner le chemin complet de l'éxécutable lorsqu'on veut lancer une commande.
 {{%/notice%}}
 
+#### Modifier la variable $PATH
+
+Pour ajouter un répertoire à la variable `$PATH`, on utilise la commande `export`. Par exemple, pour pouvoir lancer les programmes du répertoire `/home/info/scripts` sans donner leur chemin complet:
+
+```bash
+info@debian:~$ export PATH=$PATH:/home/info/scripts
+info@debian:~$ echo $PATH
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/info/scripts
+```
+
+On réutilise `$PATH` dans la nouvelle valeur afin de **conserver** les répertoires existants. Si on écrivait `export PATH=/home/info/scripts`, les commandes comme `ls` ou `mkdir` deviendraient introuvables.
+
+Pour placer le répertoire au **début** de la liste (afin qu'il soit consulté en premier), on écrit plutôt `export PATH=/home/info/scripts:$PATH`.
+
+{{%notice style="note" title="Rendre la modification permanente"%}}
+La commande `export` ne modifie `$PATH` que pour le terminal courant: la modification disparaît lorsqu'on ferme le terminal. Pour qu'elle soit appliquée à chaque ouverture de session, on ajoute la ligne `export` à la fin du fichier `~/.bashrc`:
+
+```bash
+info@debian:~$ echo 'export PATH=$PATH:/home/info/scripts' >> ~/.bashrc
+info@debian:~$ source ~/.bashrc
+```
+
+La commande `source` recharge le fichier dans le terminal courant, sans avoir à le rouvrir.
+{{%/notice%}}
+
 
 #### Autres variables d'environnement
 Dans linux, plusieurs informations utiles au système d'exploitation sont stockées dans des variables d'environnement lors de l'ouverture de la session d'un utilisateur. Par exemple:

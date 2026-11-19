@@ -86,4 +86,35 @@ Pour afficher le nom (1er élément) de l'utilisateur suivi de son ID (3e élém
 info@debian:~$ cut -d':' -f1,3 /etc/passwd
 ```
 
+### `tr`
+La commande `tr` ("translate") remplace des caractères par d'autres. Elle ne prend pas de nom de fichier: elle lit son entrée standard, on l'utilise donc avec un pipe `|` ou une redirection `<`.
+
+Par exemple, pour remplacer les espaces par des traits de soulignement:
+```bash
+info@debian:~$ echo "mon fichier de notes.txt" | tr ' ' '_'
+mon_fichier_de_notes.txt
+```
+
+L'option `-s` ("squeeze") remplace plusieurs espaces consécutifs par un seul. C'est utile avant d'utiliser `cut`, car la sortie de commandes comme `ls -l` contient souvent plusieurs espaces de suite:
+```bash
+info@debian:~$ ls -l /etc/passwd
+-rw-r--r--  1 root root 1580  3 sept. 10:12 /etc/passwd
+info@debian:~$ ls -l /etc/passwd | tr -s ' ' | cut -d' ' -f1,9
+-rw-r--r-- /etc/passwd
+```
+
+### `awk`
+`awk` est un langage complet de traitement de texte, mais on l'utilise souvent pour une tâche simple: afficher certaines colonnes d'un texte. Par défaut, `awk` sépare les colonnes par les espaces (peu importe leur nombre) et chaque colonne est désignée par `$1`, `$2`, `$3`, etc.
+
+Le même exemple qu'avec `tr` et `cut` s'écrit donc plus simplement:
+```bash
+info@debian:~$ ls -l /etc/passwd | awk '{print $1, $9}'
+-rw-r--r-- /etc/passwd
+```
+
+L'option `-F` permet de spécifier un autre délimiteur. Pour afficher le nom et l'ID des utilisateurs de `/etc/passwd`, comme avec `cut`:
+```bash
+info@debian:~$ awk -F':' '{print $1, $3}' /etc/passwd
+```
+
 [Faire les exercices 1,2,3](https://github.com/cegepmv/420-113-MV/tree/main/exercices/UtilitairesLigneCommande/)

@@ -45,9 +45,23 @@ Les options les plus courantes sont celles-ci (attention, pour la commande ps ce
 |u	| Affiche des colonnes supplémentaires, y compris le nom de l'utilisateur associé	|ps u|
 |x	| Affiche les processus lancés même ceux qui ne sont pas associés à un terminal	|ps x|
 |-e	| Affiche tous les processus sans restriction	|ps -e|
-|-f	| Affiche un format de colonne complet avec plus d'informations |ps -f|
+|-f	| Affiche un format de colonne complet avec plus d'informations, dont le `PPID` |ps -f|
+|-o	| Affiche seulement les colonnes spécifiées |ps -o pid,ppid,%cpu,cmd|
 
-Il est possible de combiner des options, par exemple `ps -e u`.
+Il est possible de combiner des options, par exemple `ps -e u`, `ps ux` ou `ps -ef`.
+
+Quelques colonnes utiles:
+
++ `PPID` (*"Parent Process ID"*) : Le PID du processus parent, c'est-à-dire celui qui a lancé le processus (affiché par `ps -f` ou `ps -ef`)
++ `%CPU` : Le pourcentage d'utilisation du processeur (affiché par `ps u` ou `ps ux`)
++ `%MEM` : Le pourcentage d'utilisation de la mémoire (affiché par `ps u` ou `ps ux`)
++ `CMD` ou `COMMAND` : La commande ayant lancé le processus
+
+Pour obtenir exactement les colonnes PID, PPID, %CPU et commande de tous les processus, on peut combiner `-e` et `-o`:
+
+```bash
+info@debian:~$ ps -eo pid,ppid,%cpu,cmd
+```
 
 ## top
 La commande `top` (*"Table of Processes"*) affiche une table qui présente en temps réel l'utilisation des ressources par l'ensemble des processus. On peut y voir les taux d'utilisation de la mémoire et du CPU entre autres. Cette commande est souvent utilisée lorsqu'on constate que le système ralentit et qu'on souhaite trouver le processus qui en est responsable.
@@ -67,7 +81,7 @@ Pour arrêter tous les processus correspondant au nom d'une commande donnée, la
 info@debian:~$ killall a.out
 ```
 
-Il peut arriver que la commande `kill` ne parvienne pas à arrêter "proprement" un processus. Lorsque c'est le cas, on peut utiliser l'option `-9`; mais attention, l'arrêt est brutal et peut parfois entraîner des pertes de données (par exemple lorsque le processus est en train d'écrire dans un fichier au moment de son interruption):
+Par défaut, `kill` envoie au processus le signal `SIGTERM` (numéro 15), qui lui demande de se terminer proprement. Un processus peut cependant ignorer ce signal, et il peut donc arriver que la commande `kill` ne parvienne pas à l'arrêter. Lorsque c'est le cas, on peut forcer l'arrêt en envoyant le signal `SIGKILL` (numéro 9) avec l'option `-9` (ou `-KILL`). Ce signal **ne peut pas être ignoré** par le processus: c'est le système d'exploitation qui l'arrête immédiatement. Mais attention, l'arrêt est brutal et peut parfois entraîner des pertes de données (par exemple lorsque le processus est en train d'écrire dans un fichier au moment de son interruption):
 
 ```bash
 info@debian:~$ kill -9 9984
